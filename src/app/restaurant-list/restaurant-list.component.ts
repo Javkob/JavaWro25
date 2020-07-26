@@ -16,7 +16,7 @@ export class RestaurantListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-   this._restaurants= this.http.get("https://jsonplaceholder.typicode.com/posts")
+   this._restaurants= this.http.get("https://jedzonkopl.herokuapp.com/restaurants")
      .toPromise()
      .then((res)=>{this._restaurants=res;});
 }}
