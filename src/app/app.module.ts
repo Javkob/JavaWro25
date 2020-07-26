@@ -7,11 +7,13 @@ import { ReactiveFormsModule} from "@angular/forms";
 import {environment} from "../environments/environment";
 import { LoginComponent } from './login/login.component';
 import {AngularFireModule} from "@angular/fire";
+import {HomeComponent} from "./home/home.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
