@@ -12,6 +12,7 @@ import {HomeComponent} from './home/home.component';
 import { RestaurantListComponent } from './restaurant-list/restaurant-list.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import {RegisterComponent} from "./register/register.component";
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
     LoginComponent,
     HomeComponent,
     AppComponent,
+    RegisterComponent,
     RestaurantListComponent
   ],
   imports: [
