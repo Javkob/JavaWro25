@@ -1,7 +1,7 @@
 import {Component, Injectable, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {AngularFireAuth} from "@angular/fire/auth";
-import {FormControl, FormGroup} from "@angular/forms";
+import {AngularFireAuth} from '@angular/fire/auth';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,10 +11,11 @@ import {FormControl, FormGroup} from "@angular/forms";
 
 @Injectable({providedIn: 'root'})
 export class LoginComponent implements OnInit {
-    loginForm = new FormGroup({
-      email: new FormControl(),
-      password: new FormControl()
-    });
+  loginForm = new FormGroup({
+    email: new FormControl(),
+    password: new FormControl()
+  });
+  error = false;
 
   constructor(public af: AngularFireAuth, private router: Router) {
 
@@ -22,12 +23,15 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  submit(){
+
+  submit() {
     this.af.signInWithEmailAndPassword(this.loginForm.value.email, this.loginForm.value.password)
-      .then(()=>{
-        this.router.navigate(['home'])
+      .then(() => {
+        this.router.navigate(['restaurant']);
       })
-      .catch(console.log);
+      .catch(() => {
+        this.error = true;
+      });
   }
 
 }

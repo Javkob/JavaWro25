@@ -1,4 +1,5 @@
-<form [formGroup]="loginForm" (submit)="submit()"> <p>form name-editor works!</p>
+<p class="text-danger" *ngIf="error">Blad logowania</p>
+<form [formGroup]="loginForm" (submit)="submit()">
   <label>
     Email:
     <input type="text" formControlName="email">
