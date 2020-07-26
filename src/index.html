@@ -9,5 +9,29 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBzjGtPBqYtfuo7Jpca2Sw-ViSEyWaDrks",
+      authDomain: "javawro25-7f9ed.firebaseapp.com",
+      databaseURL: "https://javawro25-7f9ed.firebaseio.com",
+      projectId: "javawro25-7f9ed",
+      storageBucket: "javawro25-7f9ed.appspot.com",
+      messagingSenderId: "333833059350",
+      appId: "1:333833059350:web:8268bf7b0c8d2293c40937",
+      measurementId: "G-S0SQ3GN058"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
 </html>
