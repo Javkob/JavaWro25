@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "javawro25-7f9ed"
+  },
+  "targets": {
+    "javawro25-7f9ed": {
+      "hosting": {
+        "restaurant": [
+          "javawro25-7f9ed"
+        ]
+      }
+    }
+  }
+}
