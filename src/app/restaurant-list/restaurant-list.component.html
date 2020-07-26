@@ -13,12 +13,11 @@
     </tr>
     </thead>
     <tbody>
-
+    {{_restaurants | json}}
     <tr *ngFor="let item of _restaurants">
-      <td>{{item.name}}</td>
-      <td>{{item.address}}</td>
+      <td>{{item.restaurantName}}</td>
+      <td>{{item.restaurantAddress}}</td>
     </tr>
-
     </tbody>
   </table>
 </div>
