@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
-
 @Component({
   selector: 'app-restaurant-list',
   templateUrl: './restaurant-list.component.html',
@@ -10,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
 
 export class RestaurantListComponent implements OnInit {
 
-  _restaurants: any;
+  _restaurants:any;
 
   constructor(private http:HttpClient) {
 
