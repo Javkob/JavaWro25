@@ -19,9 +19,6 @@ export class RegisterComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
-  }
-
   register() {
       this.af.createUserWithEmailAndPassword(this.registerForm.value.email, this.registerForm.value.password)
         .then(() => {
@@ -30,6 +27,9 @@ export class RegisterComponent implements OnInit {
         .catch(() => {
           this.error = true;
         });
+  }
+
+  ngOnInit(): void {
   }
 
 }
