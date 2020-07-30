@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {HomeComponent} from './home/home.component';
 import {RestaurantListComponent} from './restaurant-list/restaurant-list.component';
-import {DetailsComponent} from './details/details.component';
-
+import {RegisterComponent} from "./register/register.component";
+{path: 'register',component: RegisterComponent}
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'restaurant', component: RestaurantListComponent},
   {path: 'details', component: DetailsComponent}
-
+  {path: 'register',component: RegisterComponent}
 ];
 
 @NgModule({
