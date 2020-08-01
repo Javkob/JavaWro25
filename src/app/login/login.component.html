@@ -1,12 +1,22 @@
 <p class="text-danger" *ngIf="error">Blad logowania</p>
-<form [formGroup]="loginForm" (submit)="submit()">
-  <label>
-    Email:
-    <input type="text" formControlName="email">
-  </label>
-  <label>
-    Password:
-    <input type="password" formControlName="password">
-  </label>
-  <button type="submit" >Submit</button>
-</form>
+<div class="container pb-5 pt-5" style="background: url('/assets/image/bg-pineaple.jpg') no-repeat bottom;background-size: cover;">
+  <div class="row justify-content-center align-items-center text-center p-2">
+    <div class="m-1 col-sm-8 col-md-6 col-lg-4 shadow-sm p-3 mb-5 bg-dark border rounded">
+      <div class="pt-5 pb-5">
+        <img class="rounded mx-auto d-block" style="border: 1px solid  #d2ae0c" src="/assets/image/logo.jpg" alt="" width=70px height=70px>
+        <p class="text-center text-uppercase mt-3 text-white">Zaloguj się, aby zamówić jedzenie</p>
+        <form class="form text-center" [formGroup]="loginForm" (submit)="submit()">
+          <div class="form-group input-group-md">
+            <input type="text" formControlName="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="e-mail">
+          </div>
+          <div class="form-group input-group-md">
+            <input type="password" formControlName="password" class="form-control" id="password" placeholder="hasło">
+          </div>
+          <button class="btn btn-lg btn-block btn-primary mt-4" type="submit" style="background-color: #d2ae0c; border-color: #d2ae0c;">
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
