@@ -13,7 +13,7 @@ top: 0; right: 0; bottom: 0; margin: auto; width: 100%; height: 100%;">
           </thead>
           <tbody>
           <tr *ngFor="let item of _restaurants">
-            <td class="text-white">{{item.restaurantName}}</td>
+            <td><a [routerLink]="[item.restaurantName]"> {{item.restaurantName}}</a></td>
             <td class="text-white">{{item.restaurantAddress}}</td>
           </tr>
           </tbody>
