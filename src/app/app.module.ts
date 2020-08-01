@@ -13,6 +13,7 @@ import { RestaurantListComponent } from './restaurant-list/restaurant-list.compo
 
 import {HttpClientModule} from '@angular/common/http';
 import {RestaurantDetailsComponent} from "./restaurant-details/restaurant-details.component";
+import {RegisterComponent} from './register/register.component';
 
 
 @NgModule({
@@ -22,7 +23,9 @@ import {RestaurantDetailsComponent} from "./restaurant-details/restaurant-detail
     HomeComponent,
     AppComponent,
     RestaurantListComponent,
-    RestaurantDetailsComponent
+    RestaurantDetailsComponent,
+    RegisterComponent,
+    RestaurantListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<form [formGroup]="registerForm" (submit)="register()">
+  <label>
+    Email:
+    <input type="text" formControlName="email">
+  </label>
+  <label>
+    Password:
+    <input type="password" formControlName="password">
+  </label>
+  <button type="submit" >Submit</button>
+</form>

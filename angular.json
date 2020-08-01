@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "restaurant"
+  "defaultProject": "restaurant",
+  "cli": {
+    "analytics": false
+  }
 }
