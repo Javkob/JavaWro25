@@ -9,14 +9,14 @@ import {HttpClient} from "@angular/common/http";
 
 export class RestaurantListComponent implements OnInit {
 
-  _restaurants:any;
+  _restaurants:any=[];
 
   constructor(private http:HttpClient) {
 
   }
 
   ngOnInit(): void {
-   this._restaurants= this.http.get("https://jedzonkopl.herokuapp.com/restaurants")
+    this.http.get("https://jedzonkopl.herokuapp.com/restaurants")
      .toPromise()
      .then((res)=>{this._restaurants=res;});
 }}
