@@ -1,6 +1,23 @@
-<p>restaurant-details works!</p>
+<body>
+<img src="../../assets/image/background2.jpg">
+<div class="restaurant-details" style="margin: 30px">
+  <div>
+    <h1>{{ restaurantName }} {{ restaurantAddress }}</h1>
+  </div>
+</div>
+<div>
+  <div class="col-md-12">
+    <h2>
+    Menu
+    </h2>
+    <h3>
+      {{ restaurantAddress }}
+    </h3>
+  </div>
+</div>
 <ul>
 <li *ngFor="let item of _meals">
   {{item}}
 </li>
 </ul>
+</body>

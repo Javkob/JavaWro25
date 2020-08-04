@@ -1,0 +1,24 @@
+#restaurant-list{
+  align-content: center;
+  text-anchor: middle;
+}
+#table-title{
+  font-family: "Gill Sans";
+  color: brown;
+  background-color: rgba(255,255,255,0.5);
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  margin-inside: 5px;
+  padding: 10px;
+}
+.table-element{
+  color: brown;
+  font-weight: bold;
+  alignment: center;
+  text-align: center;
+  align-content: center;
+}
+.table-element a:hover{
+  background-color: rgba(243, 156, 18, 1);
+}

@@ -14,6 +14,7 @@ import { RestaurantListComponent } from './restaurant-list/restaurant-list.compo
 import {HttpClientModule} from '@angular/common/http';
 import {RestaurantDetailsComponent} from "./restaurant-details/restaurant-details.component";
 import {RegisterComponent} from './register/register.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {RegisterComponent} from './register/register.component';
     RestaurantListComponent,
     RestaurantDetailsComponent,
     RegisterComponent,
-    RestaurantListComponent
+    RestaurantListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
