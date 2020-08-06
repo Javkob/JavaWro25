@@ -14,7 +14,6 @@ export class RestaurantListComponent implements OnInit {
   constructor(private http:HttpClient) {
 
   }
-
   ngOnInit(): void {
     this.http.get("https://jedzonkopl.herokuapp.com/restaurants")
      .toPromise()

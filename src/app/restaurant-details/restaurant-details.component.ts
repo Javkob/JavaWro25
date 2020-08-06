@@ -18,10 +18,7 @@ export class RestaurantDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get(`https://jedzonkopl.herokuapp.com/restaurant/${(this.restaurantId)}`)
-      .toPromise()
-      .then((r)=>{this.restaurant=r;})
-
-  }
-
-}
+    this.http.get("https://jedzonkopl.herokuapp.com/restaurant/${(this.restaurantId)}")
+      .subscribe((data)=>{
+      this.restaurant=data;})
+}}
