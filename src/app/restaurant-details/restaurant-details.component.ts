@@ -9,17 +9,21 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class RestaurantDetailsComponent implements OnInit {
 
-  _meals:any=[]
   restaurantName: any;
 
+  meals:any=[]
+  restaurant: any;
+  restaurantId: any;
+
   constructor(private http:HttpClient, private route: ActivatedRoute) {
-    this.restaurantName = route.snapshot.paramMap.get('name')
+    this.restaurantId= route.snapshot.paramMap.get('id');
   }
 
   ngOnInit(): void {
-    this.http.get(`https://jedzonkopl.herokuapp.com/restaurant/${(this.restaurantName)}`)
-      .toPromise()
-      .then((m)=>{this._meals=m;})
+    this.http.get( `https://jedzonkopl.herokuapp.com/restaurants/${(this.restaurantId)}`)
+      .subscribe((data: any)=>{
+        console.log(data)
+        this.restaurant=data;})
 
   }
 
